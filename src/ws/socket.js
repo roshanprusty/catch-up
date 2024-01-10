@@ -1,3 +1,8 @@
+/**
+ * The `handleEvents` function handles various socket events for a real-time communication application.
+ * @param io - The `io` parameter is an instance of the Socket.IO server. It allows you to interact
+ * with the server and handle events related to socket connections and communication.
+ */
 const handleEvents = (io) => {
   io.on("connection", (socket) => {
     console.log("connected successfully " + socket.id);

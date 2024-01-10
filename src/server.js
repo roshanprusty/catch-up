@@ -12,13 +12,18 @@ const bodyParser= require("body-parser");
 
 app.use(express.static(path.join(__dirname, "public")));
 
-mongoose.connect("",{useNewUrlParser:true},{useUnifiedTopology:true})
-.then(()=>{
-  console.log("Database connection done")
-}).catch(()=>{
-  console.log("something went wrong")
-})
+// mongoose.connect("",{useNewUrlParser:true},{useUnifiedTopology:true})
+// .then(()=>{
+//   console.log("Database connection done")
+// }).catch(()=>{
+//   console.log("something went wrong")
+// })
+
+// mongoose.connect(3001, ()=>{
+//   console.log("Server is running");
+// })
 //creating a data schemea
+
 const notesSchema={
   title:String,
   content:String
